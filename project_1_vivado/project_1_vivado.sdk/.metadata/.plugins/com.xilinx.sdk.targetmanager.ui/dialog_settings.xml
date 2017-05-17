@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="design_1_wrapper.bit" key="design_1_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="design_1_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="design_1_wrapper_hw_platform_0-device"/>
+	<item value="zed_hw_platform" key="programfpga.hwplatform"/>
+	<item value="/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit" key="zed_hw_platform-bitFile"/>
+	<item value="false" key="design_1_wrapper_hw_platform_0-partial_bit"/>
+	<item value="" key="design_1_wrapper_hw_platform_0-bmmFile"/>
+	<item value="false" key="zed_hw_platform-partial_bit"/>
+	<item value="Local" key="zed_hw_platform-target"/>
+	<item value="" key="zed_hw_platform-bmmFile"/>
+	<item value="Auto Detect" key="zed_hw_platform-device"/>
+</section>

@@ -1,0 +1,744 @@
+17:33:48 INFO  : Registering command handlers for SDK TCF services
+17:33:49 INFO  : Launching XSCT server: xsct -n -interactive /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/temp_xsdb_launch_script.tcl
+17:33:55 INFO  : XSCT server has started successfully.
+17:33:55 INFO  : Successfully done setting XSCT server connection channel  
+17:34:18 INFO  : Successfully done setting SDK workspace  
+17:34:18 INFO  : Processing command line option -hwspec /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper.hdf.
+20:24:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:30:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:31:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:36:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:37:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:39:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:39:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:00:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:53:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+22:54:50 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:55:52 INFO  : Launching XSCT server: xsct -n -interactive /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/temp_xsdb_launch_script.tcl
+22:55:53 INFO  : XSCT server has started successfully.
+22:55:53 INFO  : Successfully done setting XSCT server connection channel  
+22:55:54 INFO  : Successfully done setting SDK workspace  
+22:56:00 INFO  : Registering command handlers for SDK TCF services
+22:56:00 INFO  : Processing command line option -hwspec /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper.hdf.
+22:56:02 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+22:58:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:58:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+22:58:46 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:00:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:00:17 INFO  : 'fpga -state' command is executed.
+23:00:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:00:18 INFO  : Jtag cable 'Digilent Zed 210248763965' is selected.
+23:00:18 INFO  : 'jtag frequency' command is executed.
+23:00:18 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:00:18 INFO  : Context for 'APU' is selected.
+23:00:18 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:00:18 INFO  : Context for 'APU' is selected.
+23:00:18 INFO  : 'stop' command is executed.
+23:00:19 INFO  : 'ps7_init' command is executed.
+23:00:19 INFO  : 'ps7_post_config' command is executed.
+23:00:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:00:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:00:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:00:20 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:00:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+23:00:20 INFO  : Memory regions updated for context APU
+23:00:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:00:20 INFO  : 'con' command is executed.
+23:00:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+con
+----------------End of Script----------------
+
+23:00:20 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+23:02:22 ERROR : (XSDB Server)extra characters after close-quote
+
+23:03:02 ERROR : (XSDB Server)extra characters after close-quote
+
+23:03:48 ERROR : (XSDB Server)extra characters after close-quote
+
+23:08:42 ERROR : (XSDB Server)extra characters after close-quote
+
+23:13:11 ERROR : (XSDB Server)extra characters after close-quote
+
+23:14:10 ERROR : (XSDB Server)extra characters after close-quote
+
+23:14:15 ERROR : (XSDB Server)can't read "logfile(open"/home/jsk_027/PSOC_ED/EdgeDetection/imgDump.txt")": no such variable
+
+23:15:10 ERROR : (XSDB Server)can't read "logfile(mrd 0x1300000 16384 b)": no such variable
+
+23:15:26 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+23:15:31 ERROR : (XSDB Server)Memory read error at 0x1300000. Cannot access DDR: the controller is held in reset
+
+23:15:34 ERROR : (XSDB Server)can't read "logfile(mrd 0x1300000 16384 b)": no such variable
+
+23:16:37 ERROR : (XSDB Server)can't read "logfile": no such variable
+
+23:16:50 ERROR : (XSDB Server)invalid command name "open"/home/jsk_027/PSOC_ED/EdgeDetection/imgDump.txt","
+
+23:16:58 ERROR : (XSDB Server)extra characters after close-quote
+
+23:17:04 ERROR : (XSDB Server)can't read "logfilefile10": no such variable
+
+23:17:53 ERROR : (XSDB Server)can't read "logfilefile11": no such variable
+
+23:18:51 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+23:19:12 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+23:19:30 ERROR : (XSDB Server)ambiguous command name "b": backtrace binary bpadd bpdisable bpenable bplist bpremove bpstatus break bt build_project
+
+23:20:14 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+23:20:26 ERROR : (XSDB Server)invalid command name "file12"
+
+23:26:58 ERROR : (XSDB Server)Memory read error at 0x1300000. Cannot access DDR: the controller is held in reset
+
+23:28:28 INFO  : Disconnected from the channel tcfchan#1.
+23:28:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:28:29 INFO  : 'fpga -state' command is executed.
+23:28:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:34 INFO  : Jtag cable 'Digilent Zed 210248763965' is selected.
+23:28:34 INFO  : 'jtag frequency' command is executed.
+23:28:34 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:28:34 INFO  : Context for 'APU' is selected.
+23:28:34 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:28:34 INFO  : Context for 'APU' is selected.
+23:28:34 INFO  : 'stop' command is executed.
+23:28:35 INFO  : 'ps7_init' command is executed.
+23:28:35 INFO  : 'ps7_post_config' command is executed.
+23:28:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:28:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:36 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:28:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+23:28:36 INFO  : Memory regions updated for context APU
+23:28:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:37 INFO  : 'con' command is executed.
+23:28:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+con
+----------------End of Script----------------
+
+23:28:37 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+23:36:40 INFO  : Disconnected from the channel tcfchan#2.
+23:37:13 INFO  : Registering command handlers for SDK TCF services
+23:37:13 INFO  : Launching XSCT server: xsct -n -interactive /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/temp_xsdb_launch_script.tcl
+23:37:14 INFO  : XSCT server has started successfully.
+23:37:14 INFO  : Successfully done setting XSCT server connection channel  
+23:37:14 INFO  : Successfully done setting SDK workspace  
+23:37:14 INFO  : Processing command line option -hwspec /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper.hdf.
+23:37:15 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:37:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:37:46 INFO  : 'fpga -state' command is executed.
+23:37:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:37:51 INFO  : Jtag cable 'Digilent Zed 210248763965' is selected.
+23:37:51 INFO  : 'jtag frequency' command is executed.
+23:37:51 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:37:51 INFO  : Context for 'APU' is selected.
+23:37:51 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:37:51 INFO  : Context for 'APU' is selected.
+23:37:51 INFO  : 'stop' command is executed.
+23:37:57 INFO  : 'ps7_init' command is executed.
+23:37:57 INFO  : 'ps7_post_config' command is executed.
+23:37:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:37:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:59 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+23:37:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+23:38:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:38:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:38:42 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:38:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:38:51 INFO  : 'fpga -state' command is executed.
+23:38:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:38:51 INFO  : Jtag cable 'Digilent Zed 210248763965' is selected.
+23:38:51 INFO  : 'jtag frequency' command is executed.
+23:38:51 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:38:51 INFO  : Context for 'APU' is selected.
+23:38:51 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:38:52 INFO  : Context for 'APU' is selected.
+23:38:52 INFO  : 'stop' command is executed.
+23:38:52 ERROR : AP transaction error, DAP status f0000021
+23:38:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+23:44:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:44:51 INFO  : 'fpga -state' command is executed.
+23:44:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:44:52 INFO  : Jtag cable 'Digilent Zed 210248763965' is selected.
+23:44:52 INFO  : 'jtag frequency' command is executed.
+23:44:52 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:44:52 INFO  : Context for 'APU' is selected.
+23:44:52 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:44:52 INFO  : Context for 'APU' is selected.
+23:44:52 INFO  : 'stop' command is executed.
+23:44:52 ERROR : AP transaction error, DAP status f0000021
+23:44:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+23:45:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:45:07 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:45:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:45:19 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:45:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248763965" && level==0} -index 1' command is executed.
+23:45:23 INFO  : 'fpga -state' command is executed.
+23:45:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:24 INFO  : Jtag cable 'Digilent Zed 210248763965' is selected.
+23:45:24 INFO  : 'jtag frequency' command is executed.
+23:45:24 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:45:24 INFO  : Context for 'APU' is selected.
+23:45:24 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:45:24 INFO  : Context for 'APU' is selected.
+23:45:24 INFO  : 'stop' command is executed.
+23:45:24 ERROR : AP transaction error, DAP status f0000021
+23:45:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248763965"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+23:47:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:47:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+23:47:08 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:47:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+23:47:18 INFO  : 'fpga -state' command is executed.
+23:47:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:47:18 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+23:47:18 INFO  : 'jtag frequency' command is executed.
+23:47:18 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:47:18 INFO  : Context for 'APU' is selected.
+23:47:18 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:47:18 INFO  : Context for 'APU' is selected.
+23:47:19 INFO  : 'stop' command is executed.
+23:47:19 INFO  : 'ps7_init' command is executed.
+23:47:19 INFO  : 'ps7_post_config' command is executed.
+23:47:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:47:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:47:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:47:21 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:47:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+23:47:21 INFO  : Memory regions updated for context APU
+23:47:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:47:21 INFO  : 'con' command is executed.
+23:47:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+23:47:21 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+23:47:58 INFO  : Disconnected from the channel tcfchan#1.
+23:47:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+23:47:59 INFO  : 'fpga -state' command is executed.
+23:47:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:48:00 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+23:48:00 INFO  : 'jtag frequency' command is executed.
+23:48:00 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:48:00 INFO  : Context for 'APU' is selected.
+23:48:03 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:48:03 INFO  : Context for 'APU' is selected.
+23:48:03 INFO  : 'stop' command is executed.
+23:48:04 INFO  : 'ps7_init' command is executed.
+23:48:04 INFO  : 'ps7_post_config' command is executed.
+23:48:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:48:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:48:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:48:05 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:48:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+23:48:05 INFO  : Memory regions updated for context APU
+23:48:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:48:05 INFO  : 'con' command is executed.
+23:48:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+23:48:05 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+23:48:59 ERROR : (XSDB Server)can't read "logfile(mrd 0x1300000 16384 b)": variable isn't array
+
+23:49:09 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+23:49:16 ERROR : (XSDB Server)wrong # of args: should be "mrd [options] address [count]"
+
+23:49:25 ERROR : (XSDB Server)wrong # args: should be "puts ?-nonewline? ?channelId? string"
+
+23:51:48 ERROR : (XSDB Server)bad option '-txt': -target-id -force -size -value -bin -file -arm-dap -arm-ap -address-space -unaligned-access -help
+23:51:48 ERROR : (XSDB Server)
+
+23:58:17 ERROR : (XSDB Server)couldn't open "file11": permission denied
+
+23:58:37 ERROR : (XSDB Server)couldn't open "file12": permission denied
+
+23:58:42 ERROR : (XSDB Server)couldn't open "file12": permission denied
+
+00:08:16 ERROR : (XSDB Server)wrong # args: should be "puts ?-nonewline? ?channelId? string"
+
+00:08:35 ERROR : (XSDB Server)wrong # args: should be "puts ?-nonewline? ?channelId? string"
+
+00:48:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:48:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+00:48:05 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:48:19 INFO  : Disconnected from the channel tcfchan#2.
+00:48:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+00:48:20 INFO  : 'fpga -state' command is executed.
+00:48:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:48:21 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+00:48:21 INFO  : 'jtag frequency' command is executed.
+00:48:21 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:48:21 INFO  : Context for 'APU' is selected.
+00:48:21 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+00:48:21 INFO  : Context for 'APU' is selected.
+00:48:21 INFO  : 'stop' command is executed.
+00:48:22 INFO  : 'ps7_init' command is executed.
+00:48:22 INFO  : 'ps7_post_config' command is executed.
+00:48:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:48:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:23 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:48:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+00:48:23 INFO  : Memory regions updated for context APU
+00:48:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:23 INFO  : 'con' command is executed.
+00:48:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+00:48:23 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+00:50:23 INFO  : Disconnected from the channel tcfchan#3.
+00:50:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+00:50:24 INFO  : 'fpga -state' command is executed.
+00:50:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:50:24 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+00:50:24 INFO  : 'jtag frequency' command is executed.
+00:50:24 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+00:50:25 INFO  : Context for 'APU' is selected.
+00:50:25 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+00:50:25 INFO  : Context for 'APU' is selected.
+00:50:25 INFO  : 'stop' command is executed.
+00:50:26 INFO  : 'ps7_init' command is executed.
+00:50:26 INFO  : 'ps7_post_config' command is executed.
+00:50:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:50:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:50:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:50:27 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:50:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+00:50:27 INFO  : Memory regions updated for context APU
+00:50:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:50:27 INFO  : 'con' command is executed.
+00:50:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+00:50:27 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+00:58:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:58:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+00:58:27 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:58:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:58:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+00:58:56 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:59:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:00:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:00:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:00:17 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:05:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:05:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:05:49 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:06:01 INFO  : Disconnected from the channel tcfchan#4.
+01:06:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:06:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:06:12 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:06:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:06:24 INFO  : 'fpga -state' command is executed.
+01:06:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:06:24 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+01:06:24 INFO  : 'jtag frequency' command is executed.
+01:06:24 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:06:24 INFO  : Context for 'APU' is selected.
+01:06:25 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:06:25 INFO  : Context for 'APU' is selected.
+01:06:25 INFO  : 'stop' command is executed.
+01:06:25 INFO  : 'ps7_init' command is executed.
+01:06:25 INFO  : 'ps7_post_config' command is executed.
+01:06:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:06:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:06:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:06:26 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:06:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+01:06:26 INFO  : Memory regions updated for context APU
+01:06:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:06:27 INFO  : 'con' command is executed.
+01:06:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+01:06:27 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+01:50:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:50:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:50:20 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:50:46 INFO  : Disconnected from the channel tcfchan#5.
+01:50:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:50:47 INFO  : 'fpga -state' command is executed.
+01:50:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:50:47 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+01:50:47 INFO  : 'jtag frequency' command is executed.
+01:50:47 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:50:48 INFO  : Context for 'APU' is selected.
+01:50:48 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:50:48 INFO  : Context for 'APU' is selected.
+01:50:48 INFO  : 'stop' command is executed.
+01:50:48 INFO  : 'ps7_init' command is executed.
+01:50:48 INFO  : 'ps7_post_config' command is executed.
+01:50:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:50:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:50:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:50:49 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:50:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+01:50:49 INFO  : Memory regions updated for context APU
+01:50:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:50:50 INFO  : 'con' command is executed.
+01:50:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+01:50:50 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+01:50:58 INFO  : Disconnected from the channel tcfchan#6.
+01:51:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:51:19 INFO  : 'fpga -state' command is executed.
+01:51:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:51:20 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+01:51:20 INFO  : 'jtag frequency' command is executed.
+01:51:20 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:51:20 INFO  : Context for 'APU' is selected.
+01:51:20 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:51:20 INFO  : Context for 'APU' is selected.
+01:51:20 INFO  : 'stop' command is executed.
+01:51:21 INFO  : 'ps7_init' command is executed.
+01:51:21 INFO  : 'ps7_post_config' command is executed.
+01:51:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:51:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:51:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:51:22 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:51:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+01:51:22 INFO  : Memory regions updated for context APU
+01:51:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:51:22 INFO  : 'con' command is executed.
+01:51:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+01:51:22 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+01:51:49 INFO  : Disconnected from the channel tcfchan#7.
+01:52:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:52:02 INFO  : 'fpga -state' command is executed.
+01:52:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:52:05 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+01:52:05 INFO  : 'jtag frequency' command is executed.
+01:52:05 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:52:05 INFO  : Context for 'APU' is selected.
+01:52:05 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:52:05 INFO  : Context for 'APU' is selected.
+01:52:05 INFO  : 'stop' command is executed.
+01:52:10 INFO  : 'ps7_init' command is executed.
+01:52:10 INFO  : 'ps7_post_config' command is executed.
+01:52:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:52:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:52:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:52:13 ERROR : Memory write error at 0x100000. AP transaction timeout
+01:52:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+01:52:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:52:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:52:36 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:53:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:53:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:53:43 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:54:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+01:54:11 INFO  : 'fpga -state' command is executed.
+01:54:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:54:11 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+01:54:11 INFO  : 'jtag frequency' command is executed.
+01:54:11 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:54:11 INFO  : Context for 'APU' is selected.
+01:54:11 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:54:11 INFO  : Context for 'APU' is selected.
+01:54:11 INFO  : 'stop' command is executed.
+01:54:12 INFO  : 'ps7_init' command is executed.
+01:54:12 INFO  : 'ps7_post_config' command is executed.
+01:54:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:54:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:54:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:54:14 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:54:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+01:54:14 INFO  : Memory regions updated for context APU
+01:54:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:54:14 INFO  : 'con' command is executed.
+01:54:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+01:54:14 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'
+01:59:27 ERROR : (XSDB Server)expected integer but got "16384]" instead
+01:59:27 ERROR : (XSDB Server)
+
+02:14:36 INFO  : Disconnected from the channel tcfchan#8.
+12:32:00 INFO  : Launching XSCT server: xsct -n -interactive /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/temp_xsdb_launch_script.tcl
+12:32:01 INFO  : Registering command handlers for SDK TCF services
+12:32:05 INFO  : XSCT server has started successfully.
+12:32:18 INFO  : Successfully done setting XSCT server connection channel  
+12:32:18 INFO  : Successfully done setting SDK workspace  
+12:32:18 INFO  : Processing command line option -hwspec /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper.hdf.
+12:32:18 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:25:19 INFO  : Launching XSCT server: xsct -n -interactive /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/temp_xsdb_launch_script.tcl
+14:25:20 INFO  : Registering command handlers for SDK TCF services
+14:25:24 INFO  : XSCT server has started successfully.
+14:25:24 INFO  : Successfully done setting XSCT server connection channel  
+14:25:37 INFO  : Successfully done setting SDK workspace  
+14:25:37 INFO  : Processing command line option -hwspec /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper.hdf.
+14:25:37 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:26:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:26:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+14:26:19 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:27:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+14:27:34 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:28:06 ERROR : (XSDB Server)unexpected arguments: 127.0.0.1:3121
+
+14:28:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:28:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+14:28:52 INFO  : FPGA configured successfully with bitstream "/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:29:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248492856" && level==0} -index 1' command is executed.
+14:29:26 INFO  : 'fpga -state' command is executed.
+14:29:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:27 INFO  : Jtag cable 'Digilent Zed 210248492856' is selected.
+14:29:27 INFO  : 'jtag frequency' command is executed.
+14:29:27 INFO  : Sourcing of '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:29:27 INFO  : Context for 'APU' is selected.
+14:29:27 INFO  : Hardware design information is loaded from '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:29:27 INFO  : Context for 'APU' is selected.
+14:29:27 INFO  : 'stop' command is executed.
+14:29:28 INFO  : 'ps7_init' command is executed.
+14:29:28 INFO  : 'ps7_post_config' command is executed.
+14:29:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:29:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:29 INFO  : The application '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:29:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+loadhw /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+dow /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/test_edge_detection/Debug/test_edge_detection.elf
+----------------End of Script----------------
+
+14:29:29 INFO  : Memory regions updated for context APU
+14:29:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:29 INFO  : 'con' command is executed.
+14:29:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248492856"} -index 0
+con
+----------------End of Script----------------
+
+14:29:29 INFO  : Launch script is exported to file '/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_test_edge_detection.elf_on_local.tcl'

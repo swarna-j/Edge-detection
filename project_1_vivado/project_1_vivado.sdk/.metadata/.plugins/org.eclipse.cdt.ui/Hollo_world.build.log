@@ -1,0 +1,143 @@
+22:53:49 **** Build of configuration Debug for project Hollo_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_g.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_g.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_g.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_g.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_g.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_g.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_intr.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_intr.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_intr.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_intr.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_intr.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_selftest.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_selftest.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_selftest.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_selftest.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_selftest.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_selftest.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_sinit.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_sinit.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_sinit.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_sinit.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src/xadcps_sinit.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_endpoint.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_endpoint.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_endpoint.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_endpoint.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_endpoint.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_endpoint.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_endpoint.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_g.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_g.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_g.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_g.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_g.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_g.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_hw.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_hw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_hw.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_hw.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_hw.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_hw.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_hw.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_intr.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_intr.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_intr.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_intr.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_intr.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_sinit.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_sinit.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_sinit.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_sinit.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src/xusbps_sinit.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.c"
+../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.c: In function 'XUartPs_StubHandler':
+../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.c:638:2: warning: statement with no effect [-Wunused-value]
+  (void *) CallBackRef;
+  ^
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_g.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_g.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_g.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_g.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_g.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_g.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_hw.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_hw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_hw.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_hw.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_hw.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_hw.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_hw.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_intr.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_intr.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_intr.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_intr.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_intr.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_options.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_options.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_options.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_options.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_options.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_options.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_options.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_selftest.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_selftest.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_selftest.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_selftest.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_selftest.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_selftest.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_sinit.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_sinit.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_sinit.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_sinit.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/uartps_v3_3/src/xuartps_sinit.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_g.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_g.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_g.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_g.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_g.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_g.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_options.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_options.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_options.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_options.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_options.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_options.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_options.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_selftest.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_selftest.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_selftest.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_selftest.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_selftest.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_selftest.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_sinit.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_sinit.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_sinit.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_sinit.c"
+Finished building: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_2/src/xttcps_sinit.c
+ 
+Building file: ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/jsk_027/hello_world/Hollo_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.d" -MT"Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.o" -o "Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.o" "../Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.c"
+In file included from ../Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.c:34:0:
+../Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_timer_hw.h:88:21: fatal error: xintc_l.h: No such file or directory
+compilation terminated.
+make: *** [Hollo_world_bsp/ps7_cortexa9_0/libsrc/standalone_v6_1/src/profile/_profile_clean.o] Error 1
+
+22:53:52 Build Finished (took 2s.803ms)
+

@@ -1,0 +1,88 @@
+
+*** Running vivado
+    with args -log design_1_axi_timer_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_timer_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_timer_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1078.551 ; gain = 144.082 ; free physical = 474 ; free virtual = 12318
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'axi_timer' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+INFO: [Synth 8-638] synthesizing module 'tc_core' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [/home/jsk_027/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21268]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (1#1) [/home/jsk_027/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21268]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (2#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'count_module' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (3#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'count_module' (4#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-638] synthesizing module 'timer_control' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'timer_control' (6#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-256] done synthesizing module 'tc_core' (7#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (8#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (9#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (10#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (11#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timer' (12#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ipshared/3edf/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_timer_0_0' (13#1) [/home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:87]
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1121.027 ; gain = 186.559 ; free physical = 427 ; free virtual = 12271
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1121.027 ; gain = 186.559 ; free physical = 427 ; free virtual = 12271
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1463.613 ; gain = 0.004 ; free physical = 135 ; free virtual = 11911
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1463.613 ; gain = 529.145 ; free physical = 129 ; free virtual = 11880
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1463.613 ; gain = 529.145 ; free physical = 125 ; free virtual = 11875
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1463.613 ; gain = 529.145 ; free physical = 139 ; free virtual = 11866
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1463.613 ; gain = 529.145 ; free physical = 209 ; free virtual = 11837
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1463.617 ; gain = 529.148 ; free physical = 167 ; free virtual = 11796
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1463.617 ; gain = 529.148 ; free physical = 924 ; free virtual = 12570
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1463.617 ; gain = 529.148 ; free physical = 918 ; free virtual = 12563
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.617 ; gain = 537.148 ; free physical = 911 ; free virtual = 12557
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.621 ; gain = 537.152 ; free physical = 912 ; free virtual = 12557
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.621 ; gain = 537.152 ; free physical = 912 ; free virtual = 12557
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.621 ; gain = 537.152 ; free physical = 910 ; free virtual = 12556
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.621 ; gain = 537.152 ; free physical = 910 ; free virtual = 12556
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.621 ; gain = 537.152 ; free physical = 910 ; free virtual = 12556
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.621 ; gain = 537.152 ; free physical = 910 ; free virtual = 12556
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    16|
+|2     |LUT1   |     6|
+|3     |LUT2   |    82|
+|4     |LUT3   |    97|
+|5     |LUT4   |    81|
+|6     |LUT5   |    22|
+|7     |LUT6   |    63|
+|8     |MUXCY  |    64|
+|9     |FDR    |    12|
+|10    |FDRE   |   228|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1471.621 ; gain = 537.152 ; free physical = 910 ; free virtual = 12556
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1471.625 ; gain = 469.652 ; free physical = 926 ; free virtual = 12571

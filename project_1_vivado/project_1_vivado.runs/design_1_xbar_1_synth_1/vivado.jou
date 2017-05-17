@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Apr  9 14:46:35 2017
+# Process ID: 6622
+# Current directory: /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.runs/design_1_xbar_1_synth_1
+# Command line: vivado -log design_1_xbar_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_1.tcl
+# Log file: /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.runs/design_1_xbar_1_synth_1/design_1_xbar_1.vds
+# Journal file: /home/jsk_027/PSOC_ED/EdgeDetection/project_1_vivado/project_1_vivado.runs/design_1_xbar_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_xbar_1.tcl -notrace

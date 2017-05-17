@@ -1,0 +1,101 @@
+/* C++ Application - Edge Detection */
+
+/* XMD Commands for downloading memory to file
+ * Download 16384 (128*128) bytes from address 0x1300000 (RX_BUFFER_BASE) to a file imgDump.txt
+ * set logfile[open "/home/jsk_027/PSOC_ED/EdgeDetection/imgDump.txt", "w"];
+ * puts $logfile(mrd 0x1300000 16384 b)
+ * close $logfile
+ */
+
+#include <stdio.h>
+#include "xaxidma.h"
+#include "xedge_detect.h"
+#include "xtime_l.h"
+#include "img_pixels.h"
+
+#define IMAGE_SIZE 128*128
+
+#define MEM_BASE_ADDR     0X01000000
+#define TX_BUFFER_BASE    MEM_BASE_ADDR+0X00100000
+#define RX_BUFFER_BASE    MEM_BASE_ADDR+0X00300000
+
+//Get a pointer to TX and RX DMA Buffer (Configure DMA)
+unsigned char *m_dma_buffer_TX = (unsigned char*)TX_BUFFER_BASE;
+unsigned char *m_dma_buffer_RX = (unsigned char*)RX_BUFFER_BASE;
+unsigned char inputImg_hw[IMAGE_SIZE*3];
+
+XAxiDma axiDma;
+XEdge_detect edgeDetect;
+
+int initDMA()
+{
+	XAxiDma_Config *CfgPtr;
+	CfgPtr = XAxiDma_LookupConfig(XPAR_AXI_DMA_0_DEVICE_ID);
+	XAxiDma_CfgInitialize(&axiDma, CfgPtr);
+	//Disable Interrupts
+	XAxiDma_IntrDisable(&axiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&axiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+	return XST_SUCCESS;
+}
+
+int initEdgeDetection()
+{
+	int status;
+	XEdge_detect_Config *edgeDetect_cfg;
+	edgeDetect_cfg = XEdge_detect_LookupConfig(XPAR_EDGE_DETECT_0_DEVICE_ID);
+	if(!edgeDetect_cfg)
+	{
+		printf("Error loading configuration for edge detection\n");
+	}
+	status = XEdge_detect_CfgInitialize(&edgeDetect, edgeDetect_cfg);
+	if(status != XST_SUCCESS)
+	{
+		printf("Error initializing edge detect instance\n");
+	}
+	return status;
+}
+
+int main()
+{
+    initDMA();
+    initEdgeDetection();
+
+    printf("Doing edge detection on hardware..\n");
+
+    //Populate data from header file and put it in memory
+    for (int idx = 0; idx < IMAGE_SIZE; idx++)
+    {
+    	inputImg_hw[idx] = img[idx];
+    }
+
+    //AxiTimerHelper axiTimer;
+    XTime tStart, tEnd;
+    //Reference : https://forums.xilinx.com/xlnx/attachments/xlnx/EMBEDDED/17960/1/sdk_main.cc
+    // Video Reference: https://www.youtube.com/watch?v=UobM_XgBdEg&t=316s
+    //AxiTimerHelper axiTimer;
+    printf("Starting...\n");
+
+    XEdge_detect_Start(&edgeDetect);
+    XTime_GetTime(&tStart);
+    //Do DMA Transfer to push input image and get output image
+    Xil_DCacheFlushRange((u32)inputImg_hw, IMAGE_SIZE*sizeof(unsigned int));
+    Xil_DCacheFlushRange((u32)m_dma_buffer_RX, IMAGE_SIZE*sizeof(unsigned int));
+
+    XAxiDma_SimpleTransfer(&axiDma,(u32)inputImg_hw,IMAGE_SIZE*sizeof(unsigned int),XAXIDMA_DMA_TO_DEVICE);
+   	XAxiDma_SimpleTransfer(&axiDma,(u32)m_dma_buffer_RX,IMAGE_SIZE*sizeof(unsigned int),XAXIDMA_DEVICE_TO_DMA);
+
+    //Wait transfers to finish
+    while(XAxiDma_Busy(&axiDma,XAXIDMA_DMA_TO_DEVICE));
+    while(XAxiDma_Busy(&axiDma,XAXIDMA_DEVICE_TO_DMA));
+
+    // Invalidate the cache to avoid reading garbage
+    Xil_DCacheInvalidateRange((u32)m_dma_buffer_RX, IMAGE_SIZE*sizeof(unsigned int));
+    XTime_GetTime(&tEnd);
+    //axiTimer.stopTimer();
+    printf("Output took %llu clock cycles.\n", 2*(tEnd - tStart));
+    printf("Execution time =  %.2f us.\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000));
+    //Time measurement Reference: https://0xstubs.org/measuring-time-in-a-bare-metal-zynq-application/)
+    //double HW_elapsed = axiTimer.getElapsedTimerInSeconds();
+    //printf("HW execution time: %f sec\n", HW_elapsed);
+	return 0;
+}
